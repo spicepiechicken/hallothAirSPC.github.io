@@ -1,0 +1,368 @@
+<!DOCTYPE html> <!--this just tells a browser, "I am an HTML document!"-->
+
+<html> <!--this is the biggest wrapper over everything, notice the closing tag at the very bottom </html>-->
+    
+    <head> <!--the <head> is for the title, meta data, and links to things like your external CSS. Aside from the title, it's not visible to the user.-->
+
+        <title>Halloth Air</title> <!--this is the page title that appears on the browser window tab-->
+
+        <!-- this is that CSS reset that eliminates all defaults and gives you a clean canvas. As you can see, the file lives in my "includes" folder. It eliminates margins and padding and things that browsers want to add to elements without you saying so -->
+<style>html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+                display: block;
+        }
+        body {
+                line-height: 1;
+        }
+        ol, ul {
+                list-style: none;
+        }
+        blockquote, q {
+                quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+                content: '';
+                content: none;
+        }
+        table {
+                border-collapse: collapse;
+                border-spacing: 0;
+        }
+        Previous Versions
+        v1.0 (200802)
+        Acknowledgments
+        Thanks to Paul Chaplin for the blockquote / q rules.
+        
+        Identity Archipelago
+        Twitter
+        Mastodon
+        GitHub
+        Flickr
+        Dribbble
+        Facebook
+        LinkedIn
+        The excuse of the day isinconsistent standards
+        All contents of this site, unless otherwise noted, are ©1993-2022 Eric A. and Kathryn S. Meyer. All Rights Reserved.
+        "Thoughts From Eric" is powered by WordPress. Most of the rest of the site is hand-authored.
+        The ink-sketch images used in this site’s design are adapted from Yūzan Mori’s Hamonshū, Volumes 1-3, published in 1903 and made available for public use by the Smithsonian Libraries and the Internet Archive.body {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        background-color:rgb(230, 230, 230);
+}
+
+#NavBar {
+        padding: 40px;
+        margin: 0px;
+        background-color:rgb(56, 85, 144);
+        position: relative;
+}
+
+.CornerLogo {
+        position: relative;
+        top: -20px;
+        font-size: 2rem;
+        font-style: italic;
+        text-decoration: none;
+        color: rgb(210, 210, 210);
+}
+
+#CornerLogoImg {
+        width: 40px;
+}
+
+#UsLinksGroup {
+        display: inline-block;
+        position: absolute;
+        font-size: 1.2rem;
+        top: 60px;
+        right: 40px;
+        padding: 40px;
+        margin: 10px;
+}
+
+#WWD {
+        font-family: "Outfit", sans-serif;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+}
+
+#WWD:hover {
+        cursor: pointer;
+}
+
+#whyU {
+        position:relative;
+        bottom:0px;
+        right:0px;
+        padding: 40px;
+        margin:10px;
+        width: 80%;
+        background-color: rgb(0, 0, 0);
+        background-image: url(../sacredMemory.jpg);
+        background-image: url(../underworldKnight.jpg);
+        text-decoration: none;
+        text-shadow: -3px 0 yellow, 0 3px yellow, 3px 0 yellow, 0 -3px yellow;
+        /* text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white; */
+        /* text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black; */
+        /* text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue; */
+        color: rgb(255, 0, 0);
+        font-size: 5rem;
+        text-align: center;
+        display: none;
+        /* visibility: hidden; */
+        border-width: 30px;
+        border-style: inset;
+        border-color: rgb(54, 54, 54);
+}
+
+.UsLinks {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+}
+
+h2 {
+        padding: 30px;
+        font-weight: bold;
+        font-size: 40px;
+        color: white;
+}
+
+#Banner {
+        padding: 100px;
+        margin: 0px;
+        font-size: 70px;
+        height: 60vh;
+        background-image: url("../NYC.JPG");
+}
+
+h1 {
+        color: white;
+        /* text-shadow: 1px 1px 2px black; */
+}
+
+#IntroP {
+        margin: 50px;
+        padding: 30px;
+        font-size: 1.2rem;
+        line-height: 140%;
+        background-color: gainsboro;
+}
+
+#intro {
+        color:black;
+}
+
+#Testimonials {
+        margin: 50px;
+        padding: 0px; 
+        width:auto;
+        height:auto;
+        /* width: 100%; */
+        position: relative;
+        /* background-color:rgb(255, 255, 255); */
+}
+
+#ET {
+        position: relative;
+        text-align: center;
+        padding: 20px;
+        color: rgb(56, 85, 144);
+        font-size: 1.9rem;
+}
+
+
+#text4U {
+        position: relative;
+        padding: 30px;
+        color: rgb(230, 230, 230);
+        font-size: 4rem;
+}
+
+
+.squareTest {
+        position: relative;
+        width: 30%;
+        height: 300px;
+
+        margin: 15px;
+        display: inline-block;
+        background-color:rgb(56, 85, 144);
+}
+
+
+.person2 {
+        position: relative;
+        top: 0px;
+}
+
+.person3 {
+        position: absolute;
+        top: 0px;
+}
+
+.isabel {
+        /* width: 30%; */
+        /* position: relative; */
+        align-items: center;
+        background-position: 40% 25%;
+        background-size: 150%;
+        background-image: url("../isabelKaratef.png");
+        background-repeat: no-repeat;
+}
+
+#Diversity {
+        margin: 50px;
+        padding: 0px;
+        font-size: 20px; 
+        position: relative;
+        background-color: rgb(33, 33, 33);
+        /* background-image: url("../DiversityPic.JPG"); */
+}
+
+#diversityText {
+        padding: 0px;
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        font-size: 1.9rem;
+        color:white;
+}
+
+#diversityPic {
+        width: 65%;
+}
+
+hr {
+        border: 1px solid silver;
+}
+
+#Footer {
+        padding: 30px;
+        margin: 0px;
+        background-color: black;
+        font-size: 1rem;
+}
+
+p {
+        color: white;
+}</style>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    </head> <!--this closes out the <head>-->
+
+    <body> <!--the <body> is very important, it contains everything that lives and appears on the page, that the user can see and interact with-->
+        
+        <div id="NavBar">
+            <img id="CornerLogoImg" src="logo-1914020_1280.png"/>
+            <a class="CornerLogo" href="">Halloth Air</a>
+            
+            <div id="UsLinksGroup">
+                <a class="UsLinks" id="WWA" href="">Who We Are</a>
+                <p class="UsLinks" id="WWD">What We Do</p>
+
+                <p class="UsLinks" id="whyU">________ⓧ________<br>Stop asking stupid questions.<br>-----------------</p>
+                <script>
+                document.getElementById("WWD").onclick = function() {  
+            
+                        document.getElementById('WWA').style.display = 'none'; // Hide the who we are
+                        document.getElementById('WWD').style.display = 'none'; // Hide the who we are
+                        document.getElementById('ethics').style.display = 'none'; // Hide the who we are
+                        document.getElementById('careers').style.display = 'none'; // Hide the who we are
+                        document.getElementById('whyU').style.display = 'inline-block'; // show the hidden message
+            
+                }; 
+
+                document.getElementById("whyU").onclick = function() {  
+                        document.getElementById('whyU').style.display = 'none'; // hide the why U message
+                        document.getElementById('WWD').style.display = 'inline-block'; // show the who we are
+                        document.getElementById('WWA').style.display = 'inline-block'; 
+                        document.getElementById('ethics').style.display = 'inline-block'; 
+                        document.getElementById('careers').style.display = 'inline-block'; 
+                }
+                </script>
+
+            <!-- <button class="UsLinks" id="whoWeAre" type="button" 
+            onclick="document.getElementById('whoWeAre').style.display='Why do you need to know that?'">Who We Are</button> -->
+
+            
+            <a class="UsLinks" id="ethics"  href="">Ethics</a>
+            <a class="UsLinks" id="careers"  href="">Careers</a>
+            </div>
+
+        </div>
+        <!-- <hr> -->
+        <div id="Banner">
+                <h1>Innovation starts here.</h1>
+        </div>
+
+        <div id="IntroP">
+                <p id="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                mollit anim id est laborum.</p>
+        </div>
+
+        <div id="Testimonials">
+                <h3 id="ET"> Our Employees </h3>
+
+                <div class="squareTest person2"><h3 id="text4U"> 
+                        Here, <br>we fight<br> for you. </h3>
+                </div>
+                <div class="squareTest isabel"></div>
+                <div class="squareTest person3"></div>
+  
+        </div>
+
+        <div id="Video"></div>
+
+        <div id="Buttons"></div>
+
+        <div id="Diversity">
+                <h2>Diversity, Equity & Inclusion</h2>
+
+                <h3 id="diversityText">We have at least one of each.</h3>
+                <img id="diversityPic" src="DiversityPicF.png">
+        </div>
+        <hr>
+        <div id="Footer">
+                <p> 80085 Shehanigant Drive <br> Reno, Nevada, 70545</p>
+        </div>
+    
+    </body> <!--this closes my visible body area-->
+
+</html> <!--this closes out the entire html page-->

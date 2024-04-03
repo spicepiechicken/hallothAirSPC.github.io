@@ -1,0 +1,160 @@
+body {
+        font-family: "Outfit";
+        position: relative;
+}
+
+/* ************* NAV BAR ************** */
+
+#NavBar {
+        padding: 20px;
+        margin: 0px;
+        background-color:rgb(35, 57, 146);
+        position: relative;
+}
+
+#CornerLogoImg {
+        margin: 10px;
+        width: 400px;
+        position: relative;
+}
+
+#CornerLogoImg:hover {
+        cursor: pointer;
+}
+
+#UsLinksGroup {
+        display: inline-block;
+        position: absolute;
+        font-size: 1.3rem;
+        bottom: 0px;
+        right: 0px;
+        padding: 20px;
+        margin: 10px;
+}
+
+#WWD {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+}
+
+#ethics {
+        display: inline-block;
+}
+
+.UsLinks {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        position: relative;
+}
+
+
+@media only screen and (max-width: 768px) {
+        #NavBar {
+                padding: 10px; 
+        }
+      
+        #CornerLogoImg {
+                width: 300px;
+        }
+      
+        #UsLinksGroup {
+                position: static; 
+                display: block; 
+                text-align: center; 
+                margin-top: 10px; 
+        }
+}
+
+/* ************* BANNER ************** */
+
+#Banner {
+        position: relative;
+        padding: 100px;
+        margin: 0px;
+        height: 25vh;
+        background-image: url("../bug-eye-view.jpeg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 50% 35%;
+        background-size: 100%;
+        
+}
+
+h2 {
+        color:white;
+        font-size: 6rem;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        padding: 90px;
+}
+
+.joinUs {
+        background-color: red;
+        display: flex-inline;
+        justify-content: center;
+        align-items: center; 
+        padding: 30px;       
+}
+
+.joinUs2 {
+        text-align: center;
+}
+
+h1 {
+        font-size: 2rem;
+        padding:30px;
+}
+
+p {
+        font-size: medium;
+        font-style: italic;
+        padding:10px;
+}
+
+/* ************* FOOTER ************** */
+#Footer {
+        padding: 90px;
+        margin: 0px;
+        background-color:black;
+        font-size: 1rem;
+        position: relative;
+        color:white;
+}
+#FooterLogoImg {
+        width: 300px;
+        padding-left: 90px; 
+        position: absolute;
+}
+
+#address {
+        margin: 10px;
+        line-height: 1.2rem;
+        text-align: center;
+}
+
+#footHA {
+        padding-right: 150px;
+        text-align: right;
+        position: relative;
+        right: 0px;
+}
+#footHA:hover {
+        cursor: pointer;
+}
+#usLinksFoot {
+        padding-right: 150px;
+        text-align: right;
+        font-weight: 300;
+        line-height: 1.2rem;
+        position: relative;
+        right: 0px;
+        padding-bottom: 30px;
+}
+
+#copyright {
+        text-align: center;
+}
